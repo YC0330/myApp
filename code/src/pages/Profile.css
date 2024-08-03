@@ -1,0 +1,77 @@
+#app {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .profile-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-view,
+  .profile-edit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-view .avatar img,
+  .profile-edit .avatar-upload img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .profile-edit .avatar-upload input {
+    display: none;
+  }
+  
+  .profile-edit input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .profile-edit button,
+  .profile-view button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .profile-edit button:hover,
+  .profile-view button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .profile-container {
+      padding: 10px;
+    }
+  
+    .profile-view .avatar img,
+    .profile-edit .avatar-upload img {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .profile-edit input {
+      padding: 8px;
+    }
+  
+    .profile-edit button,
+    .profile-view button {
+      padding: 8px 16px;
+    }
+  }
